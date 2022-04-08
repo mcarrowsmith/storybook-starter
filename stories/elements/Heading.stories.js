@@ -1,8 +1,5 @@
-import { createButton } from './Button';
-
-// More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Heading',
+  title: 'Elements/Heading',
 };
 
 export const H1 = () => '<h1 class="text-green-500">Heading 1</h1>'
