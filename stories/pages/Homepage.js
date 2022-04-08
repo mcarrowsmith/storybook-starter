@@ -1,13 +1,18 @@
 import { makeHeader } from '../components/Header';
 import { makeHero } from "../components/Hero";
+import { makePartners } from "../components/Partners";
 import { makeFooter } from '../components/Footer';
 
-export const createHomepage = () => {
+export const createHomepage = ({
+    heroLabel = 'We build sustainable digital products',
+   partnerQuantity = 8
+}) => {
     return `
 <div>
     ${makeHeader()}
     <section>
-    ${makeHero({ label: 'hero', copy: 'something or other' })}
+    ${makeHero({ label: heroLabel, copy: 'something or other' })}
+    ${makePartners({quantity: partnerQuantity})}
     </section>
     ${makeFooter()}
 </div>
