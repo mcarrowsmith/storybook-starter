@@ -9,6 +9,7 @@ export const createHomepage = ({
 }) => {
     return `
 <div>
+    <div class="breakpoint"></div>
     ${makeHeader()}
     <section>
     ${makeHero({ label: heroLabel, copy: 'something or other' })}

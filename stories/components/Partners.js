@@ -19,7 +19,7 @@ export const makePartners = ({
 
     let markup = `
 <div class="py-6">
-    <div class="max-w-7xl mx-auto">
+    <div class="wrapper">
         ${makeHeading({label, 'style': 'heading-2'})}
         <div class="grid grid-cols-4 gap-4 text-brand-black">
             ${partners}
