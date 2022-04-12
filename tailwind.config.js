@@ -84,8 +84,14 @@ module.exports = {
                     maxWidth: theme('maxWidth.7xl'),
                     marginLeft: 'auto',
                     marginRight: 'auto',
-                    paddingLeft: `calc(env(safe-area-inset-left, 0rem) + ${theme('padding.8')})`,
-                    paddingRight: `calc(env(safe-area-inset-right, 0rem) + ${theme('padding.8')})`,
+                    paddingLeft: `calc(env(safe-area-inset-left, 0rem) + ${theme('padding.2')})`,
+                    paddingRight: `calc(env(safe-area-inset-right, 0rem) + ${theme('padding.2')})`,
+                },
+                '@media screen(md)': {
+                    '.wrapper': {
+                        paddingLeft: `calc(env(safe-area-inset-left, 0rem) + ${theme('padding.4')})`,
+                        paddingRight: `calc(env(safe-area-inset-right, 0rem) + ${theme('padding.4')})`,
+                    }
                 },
                 '.heading-1': {
                     fontFamily: theme('fontFamily.serif'),
